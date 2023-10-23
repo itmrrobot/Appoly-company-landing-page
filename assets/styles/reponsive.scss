@@ -1,0 +1,299 @@
+@media (max-width: 1440px) {
+  .body {
+    overflow: hidden;
+  }
+  .active {
+    margin: 0 34px 0 34px;
+  }
+  .nav-list {
+    .logo {
+      left: 412px;
+    }
+  }
+  .mr-116 {
+    margin-right: 64px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .body {
+    overflow: visible;
+  }
+  .container {
+    .header {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    .wrap-header {
+      margin: 35px 0px;
+      padding: 0 16px;
+    }
+  }
+  .sub-nav {
+    display: none;
+  }
+  .nav-list {
+    align-items: center;
+    justify-content: space-between;
+    .nav-item {
+      display: none;
+    }
+    .nav-item-icon {
+      display: block;
+      padding: 0 16px;
+    }
+    .logo {
+      position: static;
+      box-shadow: none;
+      .logo-image {
+        padding: 16px;
+      }
+    }
+    .btn-download {
+      display: none;
+    }
+  }
+
+  .wrap {
+    max-width: 100%;
+    flex-direction: column;
+    .left {
+      margin: 0;
+      .left-content {
+        margin: 0;
+        width: 100%;
+        .left-content__title {
+          font-size: 32px;
+        }
+        .left-content__sub-title {
+          font-size: 18px;
+          padding: 0 0px 5px 30px;
+        }
+      }
+    }
+    .right {
+      margin: 32px 0;
+      padding: 0 16px;
+      .mobile-app-image {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+  .about-wrap {
+    .about-content {
+      padding: 60px 0;
+      .about-desc {
+        padding: 0 16px;
+      }
+      .about-detail {
+        flex-direction: column;
+        .android-smartphone-image {
+          margin: 0;
+          width: 100%;
+          padding: 0 16px;
+        }
+        .about-detail-right {
+          margin: 0;
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+  .features-wrap {
+    padding: 60px 0;
+  }
+  .features-content {
+    .features-desc {
+      padding: 0 16px;
+    }
+    .features-sub-desc {
+      margin: 0;
+      padding: 0 16px;
+    }
+    .wrap-support-icon {
+      margin-top: 24px;
+    }
+    .features-support-desc {
+      margin: 0;
+      padding: 0 16px;
+    }
+  }
+
+  .features-app-wrap {
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 16px;
+    .features-app-group {
+      gap: 24px;
+      text-align: center;
+    }
+    .t-a-r {
+      text-align: center;
+    }
+    .mt-60 {
+      margin-top: 0;
+    }
+    .mt-62 {
+      margin-top: 0;
+    }
+    .features-app-image {
+      margin: 0;
+      padding: 0 16px;
+    }
+  }
+  .interface-look-wrap {
+    .interface-look-content {
+      padding: 60px 0;
+      .interface-look-desc {
+        margin: 0;
+        padding: 0 16px;
+      }
+    }
+  }
+  .mr-156 {
+    margin-right: 0;
+  }
+  .wrap-slider {
+    padding: 0 16px;
+    .slider-img-list {
+      overflow: scroll;
+    }
+    .left-button-icon,
+    .right-button-icon {
+      display: none;
+    }
+  }
+  .slider-dots {
+    display: none;
+  }
+  .download-app-wrap {
+    display: block;
+    padding: 0px 16px;
+    text-align: center;
+    margin-top: 32px;
+    .download-app-wrap-left {
+      .download-app-group-btn {
+        justify-content: center;
+      }
+    }
+  }
+  .stats-wrap {
+    display: flex;
+    .stats-item {
+      margin-bottom: 16px;
+    }
+  }
+  .download-app-wrap-right {
+    margin-top: 32px;
+  }
+  .gravity-scene-iphone {
+    width: 100%;
+  }
+  .use-content {
+    .use-desc {
+      margin: 0;
+    }
+  }
+  .member-team-wrap {
+    .video-image {
+      position: absolute;
+      width: 100%;
+    }
+    .member-team-content {
+      padding: 173px 16px 0;
+    }
+  }
+  .member-team-list {
+    display: block;
+    padding: 0 16px;
+    .member-team-item {
+      padding: 24px 0;
+      margin-bottom: 24px;
+      .member-team-avatar-wrap {
+        padding: 0;
+      }
+    }
+  }
+  .contact-info-wrap {
+    .contact-info-list {
+      display: block;
+      padding: 65px 0;
+      left: 50%;
+      transform: translatex(-50%);
+      width: calc(100% - 32px);
+      .contact-info-item {
+        padding: 0 16px;
+        margin-left: 0;
+      }
+    }
+  }
+  .footer-list {
+    padding: 270px 16px 40px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    .footer-item {
+      margin-bottom: 32px;
+      .footer-item-text {
+        margin: 0 0 24px;
+      }
+      .footer-item-desc {
+        width: auto;
+      }
+    }
+  }
+  .ml-60 {
+    margin-left: 0;
+  }
+  .footer-social-network {
+    justify-content: center;
+  }
+  .footer-copyright {
+    padding: 18px 16px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 738px) {
+  .wrap {
+    .left {
+      .left-content {
+        .group-download-icon {
+          flex-direction: column;
+          align-items: baseline;
+        }
+      }
+    }
+  }
+  .download-app-wrap {
+    margin-top: 8px;
+  }
+  .features-app-wrap {
+    .features-app-image {
+      width: 100%;
+    }
+  }
+  .stats-wrap {
+    display: block;
+  }
+  .download-app-wrap-right {
+    margin-top: 8px;
+  }
+  .use-content {
+    padding: 60px 16px 116px;
+  }
+  .member-team-wrap {
+    .video-image {
+      top: -100px;
+    }
+    .member-team-content {
+      padding: 163px 16px 0;
+    }
+  }
+  .contact-info-wrap {
+    .contact-info-list {
+      width: 100%;
+    }
+  }
+}
