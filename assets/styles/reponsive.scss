@@ -1,5 +1,5 @@
-@media (max-width: 1440px) {
-  .body {
+@media (max-width: 1439px) {
+  .container {
     overflow: hidden;
   }
   .active {
@@ -7,11 +7,21 @@
   }
   .nav-list {
     .logo {
-      left: 412px;
+      .logo-image {
+        left: 412px;
+      }
     }
   }
   .mr-116 {
     margin-right: 64px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .nav-list {
+    .btn-download {
+      margin: 5px 0px 5px 27px;
+    }
   }
 }
 
@@ -43,9 +53,9 @@
       padding: 0 16px;
     }
     .logo {
-      position: static;
-      box-shadow: none;
       .logo-image {
+        position: static;
+        box-shadow: none;
         padding: 16px;
       }
     }
@@ -266,8 +276,20 @@
       }
     }
   }
+  .about-wrap {
+    .about-content {
+      .about-detail {
+        .about-detail-left {
+          margin: 0 0 16px;
+        }
+      }
+    }
+  }
   .download-app-wrap {
     margin-top: 8px;
+    .gravity-ellipse-icon {
+      margin-left: 0;
+    }
   }
   .features-app-wrap {
     .features-app-image {
@@ -294,6 +316,9 @@
   .contact-info-wrap {
     .contact-info-list {
       width: 100%;
+      .contact-info-item {
+        gap: 8px;
+      }
     }
   }
 }

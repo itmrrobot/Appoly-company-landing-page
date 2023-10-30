@@ -60,12 +60,6 @@ body {
   margin-top: 15px;
 }
 
-.active {
-  color: #5956E9;
-  text-decoration-line: underline;
-  margin: 0 38px 0 52px;
-}
-
 .ml-40 {
   margin-left: 40px;
 }
@@ -74,8 +68,8 @@ body {
   margin-right: 116px;
 }
 
-.ml-243 {
-  margin-left: 243px;
+.ml-248 {
+  margin-left: 248px;
 }
 
 .nav-list {
@@ -96,7 +90,15 @@ body {
   line-height: 30px;
   text-transform: uppercase;
 }
-.nav-list .logo {
+.nav-list .nav-item .active {
+  color: #5956E9;
+  text-decoration-line: underline;
+  margin: 0 38px 0 52px;
+}
+.nav-list :first-child {
+  padding: 17px 0;
+}
+.nav-list .logo .logo-image {
   border-radius: 5px;
   background: var(--White, #fff);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
@@ -104,11 +106,10 @@ body {
   top: -15px;
   left: 485px;
   right: 485px;
-}
-.nav-list .logo .logo-image {
   padding: 31px 17px 31px 16px;
 }
 .nav-list .btn-download {
+  cursor: pointer;
   padding: 12px 15px 8px 16px;
   border-radius: 5px;
   background: #5956E9;
@@ -118,7 +119,8 @@ body {
   line-height: 30px; /* 150% */
   text-transform: uppercase;
   border: none;
-  margin: 5px 0px 5px 54px;
+  margin: 5px 0px 5px 43px;
+  font-family: Josefin Sans;
 }
 
 .wrap {
@@ -165,10 +167,9 @@ body {
   gap: 14px;
   align-items: center;
 }
-.wrap .right .mobile-app-image {
+.wrap .right {
   margin: 82px 0 0 124px;
 }
-
 .about-wrap {
   background: #fff;
   width: 100%;
@@ -199,8 +200,15 @@ body {
   margin-top: 60px;
   display: flex;
 }
-.about-wrap .about-content .about-detail .android-smartphone-image {
+.about-wrap .about-content .about-detail .about-detail-left {
   margin: 0px 188px 0px 161px;
+}
+.about-wrap .about-content .about-detail .android-smartphone-image {
+  position: relative;
+}
+.about-wrap .about-content .about-detail .ellipse-icon {
+  margin-left: 74px;
+  margin-top: -60px;
 }
 .about-wrap .about-content .about-detail .about-detail-right {
   margin-right: 135px;
@@ -395,11 +403,17 @@ body {
   padding: 0 72px;
   align-items: center;
 }
+.wrap-slider .left-button,
+.wrap-slider .right-button {
+  height: 84px;
+}
 .wrap-slider img.left-button-icon {
   border-radius: 50%;
   border: 1px solid #5956E9;
   padding: 17px;
   cursor: pointer;
+  width: 84px;
+  height: 84px;
 }
 .wrap-slider .slider-img-list {
   display: flex;
@@ -411,6 +425,8 @@ body {
   border: 1px solid #5956e9;
   background-color: #5956E9;
   padding: 17px;
+  width: 84px;
+  height: 84px;
 }
 
 .slider-dots {
@@ -437,9 +453,16 @@ body {
   line-height: 24px; /* 150% */
 }
 .download-app-wrap .download-app-wrap-left .download-app-group-btn {
-  margin: 40px 0 60px;
+  margin: 40px 0 59px;
   display: flex;
   gap: 25px;
+}
+.download-app-wrap .gravity-scene-iphone {
+  position: relative;
+}
+.download-app-wrap .gravity-ellipse-icon {
+  margin-left: 122px;
+  margin-top: -65px;
 }
 
 .stats-wrap {
@@ -619,7 +642,7 @@ body {
 .contact-info-wrap .contact-info-list .contact-info-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 18px;
   margin-left: 50px;
 }
 .contact-info-wrap .contact-info-list .contact-info-item .contact-info-text {
@@ -663,7 +686,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; /* 150% */
-  margin: 1px 0 40px;
+  margin: 1px 0 38px;
   width: 334px;
 }
 .footer-list .footer-item .footer-item-text {
@@ -739,18 +762,23 @@ body {
   line-height: 24px; /* 150% */
 }
 
-@media (max-width: 1440px) {
-  .body {
+@media (max-width: 1439px) {
+  .container {
     overflow: hidden;
   }
   .active {
     margin: 0 34px 0 34px;
   }
-  .nav-list .logo {
+  .nav-list .logo .logo-image {
     left: 412px;
   }
   .mr-116 {
     margin-right: 64px;
+  }
+}
+@media (max-width: 1367px) {
+  .nav-list .btn-download {
+    margin: 5px 0px 5px 27px;
   }
 }
 @media (max-width: 1024px) {
@@ -779,11 +807,9 @@ body {
     display: block;
     padding: 0 16px;
   }
-  .nav-list .logo {
+  .nav-list .logo .logo-image {
     position: static;
     box-shadow: none;
-  }
-  .nav-list .logo .logo-image {
     padding: 16px;
   }
   .nav-list .btn-download {
@@ -979,8 +1005,14 @@ body {
     flex-direction: column;
     align-items: baseline;
   }
+  .about-wrap .about-content .about-detail .about-detail-left {
+    margin: 0 0 16px;
+  }
   .download-app-wrap {
     margin-top: 8px;
+  }
+  .download-app-wrap .gravity-ellipse-icon {
+    margin-left: 0;
   }
   .features-app-wrap .features-app-image {
     width: 100%;
@@ -1002,6 +1034,9 @@ body {
   }
   .contact-info-wrap .contact-info-list {
     width: 100%;
+  }
+  .contact-info-wrap .contact-info-list .contact-info-item {
+    gap: 8px;
   }
 }
 
